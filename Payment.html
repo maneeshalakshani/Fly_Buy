@@ -25,12 +25,13 @@
 	</header>
 
  	<ul class="menu">
-	 	<li class="menu"><a href="Home.html">Home</a></li>
-	 	<li class="menu"><a href="Login.html">Login</a></li>
-	 	<li class="menu"><a href="SignIn.html">Sign In</a></li>
+	 	<li class="menu"><a href="../Home.html">Home</a></li>
+	 	<li class="menu"><a href="../Hasara/html/login.html">Login</a></li>
+	 	<li class="menu"><a href="../Hasara/html/sign in.html">Sign In</a></li>
 	 	<li class="menu"><a class="active" href="Items.html">Items</a></li>
-	 	<li class="menu"><a href="MyAccount.html">My Account</a></li>
-	 	<li class="menu"><a href="CustomerCare.html">Customer Care</a></li>
+	 	<li class="menu"><a  href="../ashini/My Account.html">My Account</a></li>
+	 	<li class="menu"><a href="../ashini/Order.html">Order</a></li>
+	 	<li class="menu"><a href="../ashini/CustomerCare.html">Customer Care</a></li>
 	 </ul>
 
 	 <section>
@@ -51,22 +52,106 @@
 		<h1>Payment</h1>
 
 	<form action="/action_page.php">
-	  <label for="fname">card holder name:</label>
-	  <input type="text" id="fname" name="fname">
-	  <label for="lname">expire date:</label>
-	  <input type="text" id="lname" name="lname"><br><br>
-	  <label for="fname">Crad Number:</label>
-	  <input type="text" id="fname" name="fname">
-	  <label for="lname">CVC:</label>
-	  <input type="text" id="lname" name="lname"><br><br>
+	 
+     <label for="fname">Payment methord:</label><br><br>
+	  <select>
+	      <option>Credit card</option>
+		  <option>Debit card</option>
+		  <option>pay pal</option>
+		  </select><br>
+	 <label>card holder name:</label>
+	  <input type="text"><br>
+	  <label>expire date:</label>
+	  <input type="text"><br><br>
+	  <label>Crad Number:</label>
+	  <input type="text" ><br><br>
+	  <label >CVC:</label>
+	  <input type="text" ><br><br>
+	  
+	<body>
 
 
-	<button type="submit" onclick="mf()">Next</button>
+	<button class="button" onclick="mfunction()">Next</button>
 
-	</center>
-		</article>
-	</form>
+
 	
+		
+	</form>
+	</center>
+	</article>
+	<center>
+	<br>
+		<div class="slideshow-container">
+
+		<div class="mySlides fade">
+		  <div class="numbertext">1 / 4</div>
+		  <img src="images/fg.jfif" style="width:60%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">2 / 4</div>
+		  <img src="images/fd.jfif" style="width:50%">
+		</div>
+
+		<div class="mySlides fade">
+		  <div class="numbertext">3 / 4</div>
+		  <img src="images/fur.jfif" style="width:50%">
+		</div>
+		<div class="mySlides fade">
+		  <div class="numbertext">4 / 4</div>
+		  <img src="images/pho.jfif" style="width:50%">
+		</div>
+		<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		</div>
+
+		<div style="text-align:center">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		  <span class="dot" onclick="currentSlide(4)"></span> 
+		</div>
+
+
+		<script>
+		var slideIndex = 1;
+		showSlides(slideIndex);
+
+		function plusSlides(n) {
+		  showSlides(slideIndex += n);
+		}
+
+		function currentSlide(n) {
+		  showSlides(slideIndex = n);
+		}
+
+		function showSlides(n) {
+		  var i;
+		  var slides = document.getElementsByClassName("mySlides");
+		  var dots = document.getElementsByClassName("dot");
+		  if (n > slides.length) {slideIndex = 1}    
+		  if (n < 1) {slideIndex = slides.length}
+		  for (i = 0; i < slides.length; i++) {
+		      slides[i].style.display = "none";  
+		  }
+		  for (i = 0; i < dots.length; i++) {
+		      dots[i].className = dots[i].className.replace(" active", "");
+		  }
+		  slides[slideIndex-1].style.display = "block";  
+		  dots[slideIndex-1].className += " active";
+		}
+		</script>
+		
+     </center>
+
+
+		
+		
+		
+		
+		
+
  		<aside>
  			<img src="images/ad.jpg" width="200">
  			<img src="images/ad2.jpg" width="200">
