@@ -1,7 +1,14 @@
 function df(){
-	location.replace("Home.html")
+	location.replace("ashini/Order.html")
 }
 
+function myFunction(){
+  location.replace("Pahasara/Payment.html")
+}
+
+function mf(){
+  location.replace("DeliveryDetails.html")
+}
 
 function plusSlides(n) {
 	
